@@ -15,7 +15,7 @@ abstract public class BaseTest {
         Configuration.headless = false;
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("/Applications/Google\"Chrome.app/Contents/MacOS/Google\"Chrome");
+        options.setBinary("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
     }
     @Before
     public void init(){
