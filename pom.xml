@@ -15,6 +15,12 @@
             <version>6.16.0</version>
         </dependency>
         <dependency>
+            <groupId>com.codeborne</groupId>
+            <artifactId>selenide-junit4</artifactId>
+            <version>6.16.0</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
@@ -48,8 +54,8 @@
                 <version>2.22.2</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <junit.jupiter.extensions.autodetection.enabled>true</junit.jupiter.extensions.autodetection.enabled>
                         <selenide.browser>chrome</selenide.browser>
+                        <webdriver.chrome.driver>/usr/local/bin/chromedriver</webdriver.chrome.driver>
                         <selenide.timeout>4000</selenide.timeout>
                         <!--<selenide.baseUrl>http://localhost:8080/gui</selenide.baseUrl>-->
                         <selenide.startMaximized>false</selenide.startMaximized>
